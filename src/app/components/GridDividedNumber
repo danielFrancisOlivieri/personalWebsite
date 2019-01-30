@@ -1,0 +1,82 @@
+import React from 'react'
+import { Grid, Image } from 'semantic-ui-react'
+import WorkCard from "./WorkCard"
+import "../css/grid.css"
+
+const GridDividedNumber = () => (
+  <Grid columns={3} divided stackable inverted className="gridding">
+    <Grid.Row>
+      <Grid.Column width={9}>
+
+      <WorkCard         
+        title = {"Mapping Hannibal"}        
+        image = {"https://raw.githubusercontent.com/danielFrancisOlivieri/justFileUploads/master/MappingHannibalForSite.PNG"}
+        isProfessional = {true}
+        link = {"http://mappingancienttexts.net/wp-content/uploads/2018/06/v7spw.html"}
+        description = {"A digital storytelling of one of the greatest generals in history."}/>
+       
+      </Grid.Column>
+      <Grid.Column>
+
+      <WorkCard 
+
+title = {"What We May Become"}
+image ={"https://raw.githubusercontent.com/danielFrancisOlivieri/justFileUploads/master/whatWeMayBecome.PNG"}
+isProfessional = {true}
+description = {"A website to help teachers examine character change in Shakespeare's plays."}
+link= {"https://danielfrancisolivieri.github.io/WhatWeMayBecome/#section-1"}
+
+/>
+
+      </Grid.Column>
+      <Grid.Column >   
+
+      <WorkCard
+        title = {"Jabberwocky"}        
+        image = {"https://raw.githubusercontent.com/danielFrancisOlivieri/justFileUploads/master/jabberwocky.PNG"}
+        type = {"Passion Poject"}
+        description = {"An illustrated version of one of Lewis Carroll's most beloved poems."}
+        link = {"http://bandaniel.com/projects/jabberwocky"}
+        />
+      
+      </Grid.Column>
+    </Grid.Row>
+
+    <Grid.Row>
+      <Grid.Column >
+      
+      <WorkCard
+        title = {"Mapping Ancient Texts"}
+        image = {"https://raw.githubusercontent.com/danielFrancisOlivieri/justFileUploads/master/Cassiope.PNG"}
+        isProfessional = {true}
+        description = {"A project that helps scholars understand travel in the ancient Greco-Roman world."}
+        link = {"http://mappingancienttexts.net/wp-content/uploads/2017/04/cassiope28March.html"}
+        />
+      </Grid.Column>
+      <Grid.Column>
+      <WorkCard
+        title = {"Choose Your Own Adventure"}
+        image = {"https://raw.githubusercontent.com/danielFrancisOlivieri/justFileUploads/master/adventure.PNG"}
+        type = {"Passion Poject"}
+        description = {"A choose your own adventure game that lets you contribute to it."}
+        link = {"http://bandaniel.com/cyo/"}
+        />
+      </Grid.Column>
+      <Grid.Column>
+        <WorkCard 
+title = {"Literary Twitterbot"}
+image = {"https://raw.githubusercontent.com/danielFrancisOlivieri/justFileUploads/master/janeGal.PNG"}
+type = {"Passion Poject"}
+description = {"A Twitterbot written in Python which uses the library Markovify to generate tweets based on famous literary figures."}
+link = {"https://twitter.com/simplyTooLitBot/status/1074492830062661632"}
+        
+        
+        />
+      </Grid.Column>
+    </Grid.Row>
+  </Grid>
+)
+
+
+
+export default GridDividedNumber
