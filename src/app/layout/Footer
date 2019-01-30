@@ -1,0 +1,27 @@
+import React from 'react'
+
+
+const Footer = () => (
+  <footer className="footer">
+    <div className="container">
+      <div className="content has-text-centered">
+
+      <p>Email me at <strong>dfolivieri@gmail.com</strong>.</p>
+
+
+        <p>
+          This site is made with <strong>React</strong>, <strong>Bulma</strong> & a dash of <strong>Semantic UI</strong>.
+           Find my <span className="icon has-text-primary" style={{ marginRight: 5 }}>
+                <i className="fas fa-code"></i>
+              </span> for it here: <a href="https://github.com/danielFrancisOlivieri/personalWebsite"><span className="icon">
+                <i className="fab fa-lg fa-github"></i>
+              </span></a>.         
+          <br />        
+        </p>
+  
+      </div>
+    </div>
+  </footer>
+)
+
+export default Footer
